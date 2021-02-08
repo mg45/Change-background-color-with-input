@@ -3,5 +3,9 @@ const colorBtn = document.getElementById("color-btn")
 const mainBg = document.getElementById("main-background")
 
 function changeBgCol() {
-    mainBg.style.backgroundColor = inputColor.value;
+    if (inputColor.value == 0) {
+        alert("Please enter a Color 😀😀😀😀")
+    } else {
+        mainBg.style.backgroundColor = inputColor.value;
+    }
 }
